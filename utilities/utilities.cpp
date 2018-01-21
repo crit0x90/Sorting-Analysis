@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <time.h>
 #include "../header.h"
 
 using namespace std;
@@ -25,4 +26,16 @@ bool verifySorted(vector<int>& v)
 	}
 
 	return flag;
+}
+
+//creates a vector of size numElts and fills it with random elements
+vector<int> createRandomVector(int numElts)
+{
+	vector<int> v;
+
+	for(int i = 0; i < numElts; i++)
+	{
+		v.push_back(rand()%10);
+	}
+	return v;
 }

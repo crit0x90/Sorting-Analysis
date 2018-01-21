@@ -1,0 +1,5 @@
+quicksort
+selection sort
+bubble sort
+analysis
+testing automation

@@ -10,8 +10,9 @@ using namespace std;
 
 void vectormergesort(vector<int>& v, int left, int right);
 
+void vectorinsertionsort(vector<int>& v);
 
-
+void vectorquicksort(vector<int>& v, int low, int high);
 
 
 
@@ -26,6 +27,8 @@ void vectormergesort(vector<int>& v, int left, int right);
 void printVector(vector<int>& v);
 
 bool verifySorted(vector<int>& v);
+
+vector<int> createRandomVector(int numElts);
 
 ////////////////////////////////////////////////
 
