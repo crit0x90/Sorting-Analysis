@@ -1,6 +1,6 @@
-quicksort
 selection sort
 bubble sort
 analysis
 testing automation
 bash script
+testing script to verify the correctness of all sorts
