@@ -4,14 +4,6 @@
 
 using namespace std;
 
-// swaps two elements in a given vector
-void swap(vector<int>& v, int i, int j)
-{
-	int x = v.at(i);
-	v.at(i) = v.at(j);
-	v.at(j) = x;
-}
-
 int partition(vector<int>& v, int left, int right)
 {
 	int pivot = v.at(right);

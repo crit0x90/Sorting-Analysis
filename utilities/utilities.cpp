@@ -5,6 +5,14 @@
 
 using namespace std;
 
+// swaps two elements in a given vector
+void swap(vector<int>& v, int i, int j)
+{
+	int x = v.at(i);
+	v.at(i) = v.at(j);
+	v.at(j) = x;
+}
+
 void printVector(vector<int>& v)
 {
 	for(int i = 0; i < v.size(); i++)
