@@ -1,6 +1,7 @@
 #include "array.h"
 #include <iostream>
 
+
 using namespace std;
 
 myarray::myarray()
@@ -13,7 +14,7 @@ myarray::myarray(int s)
 
 	for(int i = 0; i < sizeOfArray; i++)
 	{
-		arr[i] = i;
+		arr[i] = rand() % 100;
 	}
 }
 
