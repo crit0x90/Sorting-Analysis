@@ -2,6 +2,7 @@
 #include <vector>
 #include <time.h>
 #include "header.h"
+#include "array/array.h"
 
 using namespace std;
 
@@ -9,15 +10,16 @@ int main()
 {
 	srand(time(NULL));
 	
-	vector<int> v = createRandomVector(10);
+	myarray arr = myarray(10); 
 
-	printVector(v);
-	cout << endl;
-
-	vectorselectionsort(v);
-
-	printVector(v);
-	cout << endl << "Is sorted: " << verifySorted(v) << endl; //will print one if the vector is sorted
+	arr.printArray();
+	arr.prepend(7);
+	arr.append(8);
+	arr.printArray();
+	arr.delFront();
+	arr.delBack();
+	arr.reverseArr();
+	arr.printArray();
 
 	return 0;
 }
