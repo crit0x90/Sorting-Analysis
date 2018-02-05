@@ -1,6 +1,4 @@
-convert all functions to use that array that we are have been using in class
 statistical analysis
 testing automation
-bash script
 testing script to verify the correctness of all sorts
 

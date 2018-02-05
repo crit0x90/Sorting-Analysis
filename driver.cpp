@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <time.h>
-#include "header.h"
 #include "array/array.h"
 
 using namespace std;
@@ -13,12 +12,7 @@ int main()
 	myarray arr = myarray(10); 
 
 	arr.printArray();
-	arr.prepend(7);
-	arr.append(8);
-	arr.printArray();
-	arr.delFront();
-	arr.delBack();
-	arr.reverseArr();
+	arr.quickSort(0, arr.getSize());
 	arr.printArray();
 
 	return 0;
