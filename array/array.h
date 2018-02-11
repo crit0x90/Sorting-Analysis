@@ -29,6 +29,7 @@ public:
 	//int* checkOdd(); //returns the odd elements of the array
 	//overload of + operator to support concatenation of arrays
 	//int* operator+(const array&) const; 
+	//bool verifySorted();
 
 	//Sorting functions
 	void bubbleSort(); 		//bubblesort implementation
