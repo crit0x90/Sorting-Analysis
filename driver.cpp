@@ -3,10 +3,10 @@
 #include <time.h>
 #include <fstream>
 #include <ctime>
-#include "array/array.h"
+#include "array.h"
 
 using namespace std;
-
+/*
 void bubbleSortTest()
 {
 	ofstream file;
@@ -64,12 +64,17 @@ void bubbleSortTest()
 	
 	file.close();
 }
-
+*/
 int main()
 {
 	srand(time(NULL));
-	
-	bubbleSortTest();
+	myarray<int>* arr = new myarray<int>(1000);
+	arr->printArray();
+	arr->quickSort(0, (arr->getSize()-1));
+	arr->printArray();
+	delete arr;
+
+	//bubbleSortTest();
 
 	return 0;
 }
