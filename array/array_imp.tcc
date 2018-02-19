@@ -32,6 +32,53 @@ void myarray<T>::printArray()
 	}
 	cout << endl;
 }
+template <typename T>
+void myarray<T>::initialize(int code)
+{
+	switch(code)
+	{
+		//sorted
+		case 1: 
+			for(int i = 0; i < sizeOfArray; i++)
+			{
+				arr[i] = rand() % 100;
+			}
+			mergeSort(0, sizeOfArray-1);
+			break;
+		//random
+		case 2: 
+			for(int i = 0; i < sizeOfArray; i++)
+			{
+				arr[i] = rand() % 100;
+			}
+			break;
+		//sorted in reverse
+		case 3:
+			for(int i = 0; i < sizeOfArray; i++)
+			{
+				arr[i] = rand() % 100;
+			}
+			mergeSort(0, sizeOfArray-1);
+			reverseArr();
+			break;
+		//10% shuffle
+		case 4:
+			for(int i = 0; i < sizeOfArray; i++)
+			{
+				arr[i] = rand() % 100;
+			}
+
+			mergeSort(0, sizeOfArray-1);
+
+			for(int i = 0; i < sizeOfArray * 0.1; i++)
+			{
+				arr[i] = rand() % 100;
+			}
+			break;
+	}
+
+	
+}
 
 template <typename T> 
 void myarray<T>::prepend(T x)

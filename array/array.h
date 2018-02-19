@@ -24,9 +24,8 @@ public:
 	void delFront();   //deletes element at front
 	void delBack();    //deletes element at end
 	void reverseArr(); //reverses the order of array
-	int  getSize();  //returns the size of the array
-	//overload of + operator to support concatenation of arrays
-	//int* operator+(const array&) const; 
+	int  getSize();  //returns the size of the array 
+	void initialize(int); //initializes the array based on the code
 
 	//Sorting functions
 	void bubbleSort(); 		//bubblesort implementation
@@ -34,7 +33,7 @@ public:
 	void selectionSort();	//selectionsort implementation
 	void merge(int left, int middle, int right); //merge step
 	void mergeSort(int left, int right); //mergesort implementation
-	int partition(int left, int right); //qsort partition
+	int  partition(int left, int right); //qsort partition
 	void quickSort(int left, int right); //qsort implementation
 
 	//utility functions
@@ -43,6 +42,13 @@ public:
 protected:
 private:
 };
+
+//testing functions
+void bubbleSortTest();
+void insertionSortTest();
+void selectionSortTest();
+void mergeSortTest();
+void quickSortTest();
 
 #include "array_imp.tcc"
 
