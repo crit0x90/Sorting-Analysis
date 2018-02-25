@@ -9,15 +9,9 @@ using namespace std;
 int main()
 {
 	srand(time(NULL));
-	/*
-	myarray<int>* arr = new myarray<int>(1000);
-	arr->printArray();
-	arr->initialize(4);
-	cout << endl;
-	arr->printArray();
-	delete arr;
-	*/
 
+	//myarray<int>* arr = new myarray<int>(1000); SYNTAX FOR CREATION OF ARRAY
+	
 	quickSortTest();
 
 	return 0;

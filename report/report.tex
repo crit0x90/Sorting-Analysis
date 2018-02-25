@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Project Titlepage Modified (v 0.1) by rcx
+%
+% Original Source: http://www.howtotex.com
+% Date: February 2014
+% 
+% This is a title page template which be used for articles & reports.
+% 
+% This is the modified version of the original Latex template from
+% aforementioned website.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{report}
+\usepackage[a4paper]{geometry}
+\usepackage[myheadings]{fullpage}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage[T1]{fontenc}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{fourier}
+\usepackage[protrusion=true, expansion=true]{microtype}
+\usepackage[english]{babel}
+\usepackage{sectsty}
+\usepackage{url, lipsum}
+
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\onehalfspacing
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+%-------------------------------------------------------------------------------
+% HEADER & FOOTER
+%-------------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\setlength\headheight{15pt}
+\fancyhead[L]{Scott McCoy}
+\fancyhead[R]{California State University, Fresno}
+\fancyfoot[R]{Page \thepage\ of \pageref{LastPage}}
+%-------------------------------------------------------------------------------
+% TITLE PAGE
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\title{ \normalsize \textsc{}
+        \\ [2.0cm]
+        \HRule{0.5pt} \\
+        \LARGE \textbf{\uppercase{Analysis of Sorting Algorithms}}
+        \HRule{2pt} \\ [0.5cm]
+        \normalsize \today \vspace*{5\baselineskip}}
+
+\date{}
+
+\author{
+        Scott McCoy \\ 
+        108786190 \\
+       	}
+
+\maketitle
+\tableofcontents
+\newpage
+
+%-------------------------------------------------------------------------------
+% Section title formatting
+\sectionfont{\scshape}
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+% BODY
+%-------------------------------------------------------------------------------
+
+\section*{Introduction}
+	The goal of this project was to learn about several different
+	sorting algorithms and the relationship between their time 
+	complexities and their real world run times. This was achieved
+	by implementing each algorithm in C++ and observing, graphing, 
+	and comparing the changes in run times for each algorithm when 
+	using different lengths and configurations for the array. A
+	statistical analysis of the run times of each configuration
+	and algorithm was also performed.
+
+\section*{Methods}
+	The algorithms that were implemented were the insertion sort,
+	selection sort, bubble sort, merge sort, and quick sort. Each 
+	sorting algorithm was ran with arrays of lengths 10, 1000, 10,000,
+	100,000, and 1,000,000. The four different configurations for
+	the arrays were already sorted, randomly shuffled, sorted in reverse,
+	and shuffled at 10 percent. Each combination of array length and 
+	configuration was sorted 100 times using each algorithm to produce the
+	data for the statistical analysis.
+
+\section*{Results}
+
+\section*{Discussion}
+
+\section*{Statistical Analysis}
+
+\end{document}
