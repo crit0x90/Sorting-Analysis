@@ -1113,7 +1113,7 @@ void quickSortTest()
 	file.open("graphing/input/quickSort.txt");
 	clock_t start;
 	double duration;
-
+	
 	//#################################################
 	//Case 1
 	cout << "10 series" << endl;
