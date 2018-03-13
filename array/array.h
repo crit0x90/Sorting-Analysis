@@ -44,11 +44,11 @@ private:
 };
 
 //testing functions
-void bubbleSortTest();
-void insertionSortTest();
-void selectionSortTest();
-void mergeSortTest();
-void quickSortTest();
+void bubbleSortTest(int type, int length);
+void insertionSortTest(int type, int length);
+void selectionSortTest(int type, int length);
+void mergeSortTest(int type, int length);
+void quickSortTest(int type, int length);
 
 #include "array_imp.tcc"
 

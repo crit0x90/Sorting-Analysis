@@ -1,4 +1,0 @@
-statistical analysis
-testing automation
-testing script to verify the correctness of all sorts
-
