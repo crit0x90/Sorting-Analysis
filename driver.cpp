@@ -62,6 +62,9 @@ int main()
 
 	bubbleSortTest(2, 4);
 	bubbleSortTest(3, 4);
+
+	insertionSortTest(1,5);
+	insertionSortTest(4,5);
 	
 	return 0;
 }
