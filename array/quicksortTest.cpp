@@ -3,6 +3,8 @@
 #include "array.h"
 using namespace std;
 
+//This file contains all of the test cases for quick sort
+
 void quickSortTest(int type, int length)
 {
 	ofstream file;

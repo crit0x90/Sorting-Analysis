@@ -8,17 +8,16 @@ using namespace std;
 
 int main()
 {
-	srand(time(NULL));
-
-	//myarray<int>* arr = new myarray<int>(1000); SYNTAX FOR CREATION OF ARRAY
+	//seed the random number generator with the current time/date
+	srand(time(NULL)); 
 
 	int sortChoice = -1;
-	int arrayType = -1;
-	int lengthChoice = -1;
+	int arrayType = 1;
+	int lengthChoice = 1;
 
-	/*
 	while(true)
 	{
+		sortChoice = -1;
 		cout << "Enter the number of the algorithm you want to test: " << endl;
 		cout << "1 - Bubble Sort" << endl;
 		cout << "2 - Insertion Sort" << endl;
@@ -58,13 +57,6 @@ int main()
 			default: cout << "Invalid index" << endl; break;
 		}
 	}
-	*/
-
-	bubbleSortTest(2, 4);
-	bubbleSortTest(3, 4);
-
-	insertionSortTest(1,5);
-	insertionSortTest(4,5);
 	
 	return 0;
 }

@@ -3,6 +3,8 @@
 #include "array.h"
 using namespace std;
 
+//This file contains all of the test cases for selection sort
+
 void selectionSortTest(int type, int length)
 {
 	ofstream file;

@@ -3,6 +3,8 @@
 #include "array.h"
 using namespace std;
 
+//This file contains all of the test cases for bubble sort
+
 void bubbleSortTest(int type, int length)
 {
 	ofstream file;

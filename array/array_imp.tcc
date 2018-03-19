@@ -3,6 +3,11 @@
 
 using namespace std;
 
+//This file contains the implementations of all of the
+//functions associated with the array with the exception
+//of the testing functions
+
+//default constructor
 template <typename T>
 myarray<T>::myarray()
 {}
@@ -20,6 +25,7 @@ myarray<T>::myarray(int s)
 	}
 }
 
+//default destructor
 template <typename T>
 myarray<T>::~myarray()
 {}

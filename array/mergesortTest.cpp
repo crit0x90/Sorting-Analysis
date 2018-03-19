@@ -3,6 +3,8 @@
 #include "array.h"
 using namespace std;
 
+//This file contains all of the test cases for merge sort
+
 void mergeSortTest(int type, int length)
 {
 	ofstream file;
