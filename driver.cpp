@@ -16,6 +16,7 @@ int main()
 	int arrayType = -1;
 	int lengthChoice = -1;
 
+	/*
 	while(true)
 	{
 		cout << "Enter the number of the algorithm you want to test: " << endl;
@@ -57,6 +58,10 @@ int main()
 			default: cout << "Invalid index" << endl; break;
 		}
 	}
+	*/
 
+	bubbleSortTest(2, 4);
+	bubbleSortTest(3, 4);
+	
 	return 0;
 }

@@ -6,7 +6,8 @@ using namespace std;
 template <typename T>
 myarray<T>::myarray()
 {}
- 
+
+//copy constructor
 template <typename T>
 myarray<T>::myarray(int s)
 {
@@ -23,6 +24,7 @@ template <typename T>
 myarray<T>::~myarray()
 {}
 
+//prints the contents of the array
 template <typename T>
 void myarray<T>::printArray()
 {
@@ -32,6 +34,10 @@ void myarray<T>::printArray()
 	}
 	cout << endl;
 }
+
+//this function is used to populate the array
+//with elements in the configuration corresponding
+//to the code it recieves
 template <typename T>
 void myarray<T>::initialize(int code)
 {
@@ -63,23 +69,25 @@ void myarray<T>::initialize(int code)
 			break;
 		//10% shuffle
 		case 4:
+			//create array
 			for(int i = 0; i < sizeOfArray; i++)
 			{
 				arr[i] = rand() % 100;
 			}
-
+			//sort array
 			mergeSort(0, sizeOfArray-1);
 
+			//shuffle at 10%
 			for(int i = 0; i < sizeOfArray * 0.1; i++)
 			{
-				arr[i] = rand() % 100;
+				int randomIndex = rand() % sizeOfArray;
+				arr[randomIndex] = rand() % 100;
 			}
 			break;
 	}
-
-	
 }
 
+//inserts element at the beginning of the array
 template <typename T> 
 void myarray<T>::prepend(T x)
 {
@@ -95,6 +103,7 @@ void myarray<T>::prepend(T x)
 	delete old;
 }
 
+//inserts element at the end of the array
 template <typename T>
 void myarray<T>::append(T x)
 {
@@ -110,6 +119,7 @@ void myarray<T>::append(T x)
 	delete old;
 }
 
+//deletes the first element in the array
 template <typename T>
 void myarray<T>::delFront()
 {
@@ -124,6 +134,7 @@ void myarray<T>::delFront()
 	delete old;
 }
 
+//deletes the last element in the array
 template <typename T>
 void myarray<T>::delBack()
 {
@@ -138,6 +149,7 @@ void myarray<T>::delBack()
 	delete old;
 }
 
+//reverses the order of the array
 template<typename T>
 void myarray<T>::reverseArr()
 {
@@ -160,6 +172,8 @@ int myarray<T>::getSize()
 	return sizeOfArray;
 }
 
+//helper function used to swap two elements
+//at indexes i and j
 template <typename T>
 void myarray<T>::swap(int i, int j)
 {
@@ -183,6 +197,7 @@ void myarray<T>::bubbleSort()
 		}
 	}
 }
+
 
 template <typename T>
 void myarray<T>::insertionSort()
@@ -209,8 +224,8 @@ void myarray<T>::insertionSort()
 template <typename T>
 void myarray<T>::selectionSort()
 {
-	int min;
-	int j;
+	int min; //min elt for current pass
+	int j; //counter
 	for(int i = 0; i < sizeOfArray-1; i++)
 	{
 		min = i;
@@ -225,6 +240,7 @@ void myarray<T>::selectionSort()
 	}
 }
 
+//merge helper function for mergesort
 template <typename T>
 void myarray<T>::merge(int left, int middle, int right)
 {
@@ -286,6 +302,7 @@ void myarray<T>::merge(int left, int middle, int right)
 	}
 }
 
+//mergesort main function
 //call with 0, size-1
 template <typename T>
 void myarray<T>::mergeSort(int left , int right)
@@ -301,6 +318,7 @@ void myarray<T>::mergeSort(int left , int right)
 	}
 }
 
+//partition function for quicksort
 template <typename T>
 int myarray<T>::partition(int left, int right)
 {
@@ -320,6 +338,7 @@ int myarray<T>::partition(int left, int right)
 }
 
 //call with 0, size-1
+//quicksort main function
 template <typename T>
 void myarray<T>::quickSort(int left, int right)
 {
