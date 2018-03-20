@@ -1,5 +1,5 @@
 
-filename = 'mergesort/mergesort.txt'
+filename = 'selectionsort/selectionSort.txt'
 
 with open(filename) as file:
 	for line in file:
